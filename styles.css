@@ -43,7 +43,7 @@ header {
 }
 
 .navbar {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(17, 1, 1, 0.6);
     padding: 1.2rem;
 }
 .navigation {
@@ -278,3 +278,25 @@ header {
     background: var(--exDark);
 }
 /* End of blog styling */
+/* Start of about styling */
+
+.about {
+    padding: 4.5rem 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    align-items: center;
+}
+
+.about-text {
+    margin: 2rem 0;
+}
+.about-text p {
+    font-size: 1rem;
+    padding: 1.4rem 0;
+    opacity: 0.8rem;
+}
+/* End of about styling */
