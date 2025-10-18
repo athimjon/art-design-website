@@ -17,7 +17,9 @@
     font-family: var(--Quicksand);
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     line-height: 1.4;
     color: var(--dark);
@@ -34,16 +36,12 @@ img {
 }
 header {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    background-image: url(images/banner-bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(images/banner-bg.jpg) center/cover no-repeat fixed;
 }
 
 .navbar {
-    background: rgba(17, 1, 1, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     padding: 1.2rem;
 }
 .navigation {
@@ -113,7 +111,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 1.4rem;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -300,3 +298,41 @@ header {
     opacity: 0.8rem;
 }
 /* End of about styling */
+
+/*   <!--  Start of Footer section --> */
+footer {
+    background: var(--dark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a {
+    border: 2px solid #fff;
+    color: #ffff;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+    background: #fff;
+    color: var(--dark);
+}
+footer span {
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+/* <!--  End of Footer section --> */
